@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Oderli Rigo | Corretor de Imóveis em Passo Fundo / RS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-content">
+      <div class="logo-area">
+        <img src="img/logo.png" alt="Foto do corretor de imóveis Oderli Rigo" class="logo" />
+        <div class="logo-text">
+          <strong>Oderli Rigo</strong>
+          <span>Corretor de imóveis em Passo Fundo / RS</span>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#inicio">Início</a>
+        <a href="#imoveis">Imóveis</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button class="btn-mobile" id="btn-mobile">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO + BUSCA -->
+  <section class="hero" id="inicio">
+    <div class="container hero-content">
+      <div class="hero-text">
+
+        <!-- BLOCO DE IDENTIDADE DO CORRETOR -->
+        <div class="hero-profile">
+          <img src="img/logo.png" alt="Foto do corretor Oderli Rigo" class="hero-avatar" />
+          <div class="hero-profile-text">
+            <span class="hero-name">Oderli Rigo</span>
+            <span class="hero-role">Corretor de imóveis • +15 anos de experiência</span>
+            <span class="hero-city">Passo Fundo / RS</span>
+          </div>
+        </div>
+
+        <span class="badge">Passo Fundo / RS • Atendimento personalizado</span>
+        <h1>O corretor certo para acompanhar a escolha do seu imóvel.</h1>
+        <p>
+          Com mais de 15 anos de experiência no mercado imobiliário, o Oderli
+          une escuta atenta, clareza nas informações e cuidado em cada etapa
+          para que você se sinta seguro da primeira conversa à entrega das chaves.
+        </p>
+        <form class="search-box" id="search-form">
+          <div class="search-row">
+            <select id="tipo">
+              <option value="">Tipo de imóvel</option>
+              <option>Apartamento</option>
+              <option>Casa</option>
+              <option>Comercial</option>
+              <option>Terreno</option>
+            </select>
+            <select id="operacao">
+              <option value="">Quero</option>
+              <option>Alugar</option>
+              <option>Comprar</option>
+            </select>
+          </div>
+          <div class="search-row">
+            <input type="text" id="bairro" placeholder="Bairro (opcional)" />
+            <button type="submit">Buscar imóveis</button>
+          </div>
+          <small class="search-hint">
+            * Busca ilustrativa para o protótipo do curso (sem back-end).
+          </small>
+        </form>
+      </div>
+
+      <!-- CARD DE FEEDBACKS (CARROSSEL) -->
+      <div class="hero-highlight">
+        <div class="hero-card hero-testimonials">
+          <span class="hero-card-tag">O que os clientes dizem</span>
+          <div class="testimonial-frame">
+            <img
+              src="img/feedback1.jpg"
+              alt="Feedback de cliente do corretor Oderli Rigo"
+              id="testimonial-image"
+            />
+          </div>
+          <p class="testimonial-hint">
+            Prints reais de mensagens de clientes. As imagens trocam automaticamente.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMÓVEIS EM DESTAQUE -->
+  <section class="section" id="imoveis">
+    <div class="container">
+      <header class="section-header">
+        <h2>Imóveis em destaque</h2>
+        <p>Alguns exemplos de imóveis que representam o tipo de trabalho do Oderli.</p>
+      </header>
+
+      <div class="cards-grid" id="cards-container">
+        <!-- Os cards são inseridos via JS (script.js) -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO SOBRE -->
+  <section class="section section-alt" id="sobre">
+    <div class="container about-grid">
+      <div>
+        <h2>Quem é o Oderli Rigo</h2>
+        <p>
+          Oderli Rigo é corretor de imóveis em Passo Fundo / RS, com mais de
+          15 anos de atuação em compra, venda e locação. Ao longo dessa
+          trajetória, construiu relações de confiança com famílias, investidores
+          e profissionais parceiros.
+        </p>
+        <p>
+          Mais do que mostrar imóveis, o foco do Oderli é entender o seu
+          momento de vida, explicar cada passo com linguagem simples e cuidar
+          da documentação para que a negociação seja tranquila, transparente e segura.
+        </p>
+      </div>
+      <div class="about-highlight">
+        <h3>Por que trabalhar com o Oderli?</h3>
+        <ul>
+          <li>Atendimento humano, próximo e acessível, sem “imobiliarês”.</li>
+          <li>Curadoria de imóveis alinhados ao seu perfil e capacidade financeira.</li>
+          <li>Acompanhamento em visitas, negociação, contratos e documentação.</li>
+          <li>Rede de apoio com profissionais de confiança (advocacia, perícia, contabilidade, etc.).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section" id="contato">
+    <div class="container contact-grid">
+      <div>
+        <h2>Fale com o Oderli</h2>
+        <p>
+          Preencha os dados abaixo para simular um contato. No projeto real,
+          este formulário pode ser integrado com WhatsApp, e-mail ou CRM para
+          organizar os atendimentos do corretor.
+        </p>
+
+        <form class="contact-form">
+          <label>
+            Nome
+            <input type="text" placeholder="Seu nome completo" />
+          </label>
+          <label>
+            WhatsApp
+            <input type="tel" placeholder="(54) 99978-8607" />
+          </label>
+          <label>
+            Tipo de interesse
+            <select>
+              <option>Quero alugar</option>
+              <option>Quero comprar</option>
+              <option>Quero vender meu imóvel</option>
+            </select>
+          </label>
+          <label>
+            Mensagem
+            <textarea rows="4" placeholder="Conte um pouco do que você procura."></textarea>
+          </label>
+
+          <button type="button" class="btn-primary">
+            Enviar (simulação)
+          </button>
+          <small class="search-hint">
+            * Para o trabalho do curso, este botão não precisa enviar de verdade.
+          </small>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <h3>Atendimento do corretor</h3>
+        <p>Passo Fundo / RS</p>
+        <p>Horário de atendimento: 8h30 às 12h e 13h30 às 18h.</p>
+
+        <h3>Contato digital</h3>
+        <ul>
+          <li>WhatsApp: <a href="https://wa.me/5554999788607" target="_blank">(54) 99978-8607</a></li>
+          <li>E-mail: <a href="mailto:contato@oderlirigo.com.br">contato@oderlirigo.com.br</a></li>
+          <li>Instagram: <a href="https://www.instagram.com/oderlif?igsh=N2dkOTF1MnpnMDFs" target="_blank">@oderlif</a></li>
+          <li>Facebook: <a href="https://www.facebook.com/oderlif.rigo" target="_blank">/oderlif.rigo</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2025 Oderli Rigo – Corretor de Imóveis em Passo Fundo / RS. Protótipo acadêmico.</p>
+      <p class="footer-note">
+        Desenvolvido por Pamela – Projeto final do curso de programação.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
